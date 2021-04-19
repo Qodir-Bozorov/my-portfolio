@@ -802,8 +802,8 @@ img {
     line-height: 1.5;
   }
   .hero__right {
-    width: 450px;
-    height: 450px;
+    width: 400px;
+    height: 400px;
   }
 }
 
@@ -828,6 +828,13 @@ img {
         -ms-flex-align: center;
             align-items: center;
     margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .hero__right {
+    width: 350px;
+    height: 350px;
   }
 }
 /*# sourceMappingURL=main.css.map */
