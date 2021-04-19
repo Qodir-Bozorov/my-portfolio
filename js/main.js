@@ -1,5 +1,6 @@
 var toggler = document.querySelector(".nav-list__toggler")
 var navList = document.querySelector(".site-nav__nav-list")
+var heroHeader = document.querySelector(".hero__heading")
 
 toggler.addEventListener("click", function (e) {
   e.preventDefault()
@@ -22,3 +23,15 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
+
+var i = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
+
+// function typeWriter() {
+//   if (i < txt.length) {
+//     .innerHTML += txt.charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }

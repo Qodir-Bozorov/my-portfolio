@@ -1,0 +1,73 @@
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__left {
+  max-width: 540px;
+  margin: 90px 0;
+}
+
+.hero__title {
+  font-family: "Oswald";
+  font-weight: normal;
+  color: $title-color;
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+.hero__heading {
+  font-family: "Oswald";
+  font-weight: normal;
+  color: $heading-text-color;
+  font-size: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__text {
+  font-size: 18px;
+  color: $sec-text-color;
+  margin-bottom: 80px;
+}
+
+.hero__button {
+  position: relative;
+  padding: 15px;
+  background-color: $light-blue;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 400ms ease-in-out;
+  &::after {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 57px;
+    background-color: $dark-blue;
+    height: 100%;
+    top: 0;
+    right: -10px;
+    background-image: url(../img/icons/right-arrow-white.svg);
+    background-position: center center;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    transition: all 400ms ease;
+    z-index: -1;
+  }
+  &:hover::after {
+    width: 50%;
+    background-position: center center;
+    background-size: 35px;
+    top: 0;
+    right: -57px;
+    // z-index: 0;
+  }
+}
+
+.hero__right {
+  max-width: 510px;
+}
