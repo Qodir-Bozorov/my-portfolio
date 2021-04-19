@@ -1,5 +1,16 @@
-.site-header__container {
+.site-header {
   padding-top: 60px;
+  background-color: rgba(242, 242, 242, 0.753);
+  backdrop-filter: blur(4px);
+  margin-top: 0;
+  transition: all 200ms ease-out;
+}
+.sticky {
+  transition: all 200ms ease-in;
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: 0;
 }
 
 .site-nav {

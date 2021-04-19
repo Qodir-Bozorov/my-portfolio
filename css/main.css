@@ -530,8 +530,23 @@ img {
   margin-right: auto;
 }
 
-.site-header__container {
+.site-header {
   padding-top: 60px;
+  background-color: rgba(242, 242, 242, 0.753);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  margin-top: 0;
+  -webkit-transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
+}
+
+.sticky {
+  -webkit-transition: all 200ms ease-in;
+  transition: all 200ms ease-in;
+  position: fixed;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: 0;
 }
 
 .site-nav {
@@ -655,5 +670,9 @@ img {
   .site-nav__nav-link::before {
     display: none;
   }
+}
+
+.sticky + .site-main {
+  padding-top: 100px;
 }
 /*# sourceMappingURL=main.css.map */
