@@ -615,6 +615,9 @@ img {
 }
 
 @media only screen and (max-width: 630px) {
+  .site-header__container {
+    padding-top: 20px;
+  }
   .nav-list__toggler {
     display: block;
   }
@@ -627,18 +630,23 @@ img {
     right: 2px;
   }
   .site-nav__nav-list--open {
-    background-color: #f2f2f2;
+    background-color: #eee;
+    padding: 5px 0;
+    border-radius: 3px;
     right: 0;
     top: 92%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     opacity: 100%;
-    border: 1px solid #5F9FFE;
+  }
+  .site-nav__nav-link {
+    border-radius: 3px;
+    width: 100%;
   }
   .site-nav__nav-link:hover {
     background-color: #5F9FFE;

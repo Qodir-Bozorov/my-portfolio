@@ -63,6 +63,9 @@
 }
 
 @include breakpoint-down(630px) {
+  .site-header__container {
+    padding-top: 20px;
+  }
   .nav-list__toggler {
     display: block;
   }
@@ -74,16 +77,19 @@
     right: 2px;
   }
   .site-nav__nav-list--open {
-    background-color: #f2f2f2;
+    background-color: #eee;
+    padding: 5px 0;
+    border-radius: 3px;
     right: 0;
     top: 92%;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     opacity: 100%;
-    border: 1px solid $light-blue;
   }
 
   .site-nav__nav-link {
+    border-radius: 3px;
+    width: 100%;
     &:hover {
       background-color: $light-blue;
       color: #f2f2f2;
